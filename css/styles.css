@@ -3,6 +3,7 @@ body {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    width: 100%;
 }
 
 a {
@@ -31,7 +32,7 @@ h1, h2, h3, h4 {
 .before-header h1 {
     font-size: 90px;
 font-weight: 800;
-background-color: yellow;
+background-color: #ffc402;
 display: inline;
 margin-left: 125px;
 margin-right: 120px;
@@ -49,7 +50,7 @@ padding: 12px;
 }
 
 .button-1 {
-    background-color: yellow;
+    background-color: #ffc402;
     color: black;
     font-size: 30px;
     font-weight: 600;
@@ -63,7 +64,7 @@ padding: 12px;
 }
 
 .button-2 {
-    background-color: yellow;
+    background-color: #ffc402;
         color: black;
         font-size: 30px;
         font-weight: 600;
@@ -182,40 +183,12 @@ color: orange;
     padding-bottom: 0;
 }
 
-/*  
-
-.gallery-title {
-    display: block;
-    text-align: center;
-    font-size: 38px;
-    color: white;
-}
-
-
-.gallery-list {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 20px;
-    gap: 0.7px;
-}
-
-.gallery-cont {
-    width: 1350px;
-}
-
-.gallery-list li {
-    width: calc((100% - 2.8px) / 5);
-}
-
-.gallery-list li>img {
-    max-width: 100%;
-}
 
 .gallery-list-item:hover {
     width: 500px;
 }
 
-*/ 
+
 
 .gallery-title {
     display: block;
@@ -224,9 +197,6 @@ color: orange;
     color: white;
 }
 
-.gallery-cont {
-
-}
 
 .gallery-list {
     padding: 0;
@@ -234,18 +204,20 @@ color: orange;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-content: flex-start;
+    position: relative;
 }
 
 .gallery-list-item {
     padding: 0;
     margin: 0;
-    align-content: flex-start;
+    width: 500px;
  }
 
 .gallery-list-item img {
     display: block;
-    max-width: 500px;
-        height: auto;
+    width: inherit;
+       
 
 }
 
@@ -290,4 +262,35 @@ footer {
         margin-left: 1400px;
         margin-bottom: 50px;
     }
+
+
+
+@media screen and (max-width: 1300px) {
+.gallery-list-item {
+width: 450px;
+    }
+    }
+
+@media screen and (max-width: 1200px) {
+    .gallery-list-item {
+    width: 400px;
+              }
+          }
+
+@media screen and (max-width: 1100px) {
+                            .gallery-list-item {
+                                width: 350px;
+                            }
+                        }
+@media screen and (max-width: 1000px) {
+    .gallery-list-item {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .gallery-list-item {
+        width: 270px;
+    }
+}
 
