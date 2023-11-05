@@ -179,11 +179,6 @@ padding: 12px;
     padding-bottom: 0;
 }
 
-  
-.gallery-list-item:hover {
-    width: 500px;
-}
-
 
 
 .gallery-title {
@@ -209,8 +204,8 @@ padding: 12px;
     margin: 0;
     flex-basis: calc((100% - 4px) / 5);
     min-width: 200px;
-
  }
+
 
 .gallery-list-item img {
     display: block;
