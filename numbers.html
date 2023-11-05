@@ -2,16 +2,20 @@
 <html lang="en">
   <head>
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="shortcut icon" href="./images/cropped-logo_top-shar-1.png" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>numbers</title>
     <style>
+      /* 
       section ul li img {
         display: block;
+        max-width: 100%;
       }
       section ul li {
         margin-bottom: 55px;
         margin-left: 550px;
+        width: 500px;
       }
 
       section ul li h4 {
@@ -23,14 +27,25 @@
         position: fixed;
         top: 0px;
       }
-      section ul {
-        padding-top: 120px;
+      section {
+        padding-top: 50px;
+      }
+       */
+
+      img {
+        display: block;
+        margin: 0 auto 35px;
+      }
+
+      section {
+        text-align: center;
+        padding-top: 50px;
       }
     </style>
   </head>
   <body>
-    <header>
-      <nav>
+    <header class="header-fake">
+      <nav class="nav">
         <a class="logo" href="./index.html"
           ><img
             src="./images/cropped-logo_top-shar-1.png"
@@ -118,27 +133,18 @@
       <div class="adress-cont">
         <ul class="cont-imgs">
           <li>
-            <a href=""
-              ><img
-                src="./images/adress/phone.png.crdownload"
-                alt="phone"
-                width="60"
+            <a href="tel:+380973351065"
+              ><img src="./images/adress/phone.png" alt="phone" width="60"
             /></a>
           </li>
           <li>
-            <a href=""
-              ><img
-                src="./images/adress/viber.png.crdownload"
-                alt="viber"
-                width="60"
+            <a href="viber://add?number=380973351065"
+              ><img src="./images/adress/viber.png" alt="viber" width="60"
             /></a>
           </li>
           <li>
-            <a href=""
-              ><img
-                src="./images/adress/insta.png.crdownload"
-                alt="insta"
-                width="60"
+            <a href="https://www.instagram.com/toptop_shar/"
+              ><img src="./images/adress/insta.png" alt="insta" width="60"
             /></a>
           </li>
         </ul>
@@ -148,7 +154,7 @@
         </adress>
       </div>
       <a class="call-us" href="tel:+380973351065"
-        ><img src="./images/adress/phone.png.crdownload" width="80" alt=""
+        ><img src="./images/adress/phone.png" width="80" alt="phone"
       /></a>
     </footer>
   </body>

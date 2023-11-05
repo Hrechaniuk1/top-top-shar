@@ -17,25 +17,26 @@ ul {
 }
 
 h1, h2, h3, h4 {
-    margin: 0;
+    margin-top: 0;
+    margin-bottom: 0;
     display: inline-block;
 }
 
-/* section */
+/* fake header */
 
 .before-header {
     padding-top: 190px;
     padding-bottom: 190px;
+    text-align: center;
+    position: relative;
 }
 
 
-.before-header h1 {
+
+.main-title-1 {
     font-size: 90px;
 font-weight: 800;
 background-color: #ffc402;
-display: inline;
-margin-left: 125px;
-margin-right: 120px;
 border-radius: 10px;
 padding: 12px;
 }
@@ -82,41 +83,36 @@ padding: 12px;
     color: white;
 }
 
-/* header */
+/* section header main page */
 
 .logo {
     margin-left: 50px;
 }
 
-header {
-    background-color: blueviolet;
+.header-fake {
+    background-color: #9b75cc;
     position: sticky;
     top: 0;
   }
 
-
-header nav {
-    display: flex;
-}
-
-header nav>ul {
+.nav>ul {
     display: flex;
     gap: 20px;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-content: flex-start;
-    align-items: flex-start;
-    color: white;
-}
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-content: flex-start;
+        align-items: flex-start;
+        color: white;
+    }
 
-.main-nav:hover {
-color: orange;
-}
-
-.header-page {
+.nav {
     display: flex;
-    flex-direction: column-reverse;
 }
+
+.nav ul>li:hover {
+    color: orange;
+}
+    
 
 /* section-2 */
 
@@ -183,7 +179,7 @@ color: orange;
     padding-bottom: 0;
 }
 
-
+  
 .gallery-list-item:hover {
     width: 500px;
 }
@@ -203,23 +199,29 @@ color: orange;
     margin: 0;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     align-content: flex-start;
-    position: relative;
+    gap: 1px;
+    
 }
 
 .gallery-list-item {
     padding: 0;
     margin: 0;
-    width: 500px;
+    flex-basis: calc((100% - 4px) / 5);
+    min-width: 200px;
+
  }
 
 .gallery-list-item img {
     display: block;
-    width: inherit;
+    width: 100%;
        
 
 }
+
+
+
+
 
 /* footer */
 
@@ -263,34 +265,4 @@ footer {
         margin-bottom: 50px;
     }
 
-
-
-@media screen and (max-width: 1300px) {
-.gallery-list-item {
-width: 450px;
-    }
-    }
-
-@media screen and (max-width: 1200px) {
-    .gallery-list-item {
-    width: 400px;
-              }
-          }
-
-@media screen and (max-width: 1100px) {
-                            .gallery-list-item {
-                                width: 350px;
-                            }
-                        }
-@media screen and (max-width: 1000px) {
-    .gallery-list-item {
-        width: 300px;
-    }
-}
-
-@media screen and (max-width: 900px) {
-    .gallery-list-item {
-        width: 270px;
-    }
-}
 
