@@ -339,6 +339,13 @@ footer {
     display: none;
 }
 
+
+/* numbers html */
+.img-numbers img {
+    width: 250px;
+}
+
+
 @media (max-width: 400px) {
     .futures-list-item p {
         display: none;
